@@ -1,0 +1,41 @@
+{
+    "name": "sal-syntax",
+    "displayName": "SAL (Symbolic Analysis Laboratory) Syntax Highlighting",
+    "description": "Syntax highlighting for SRI's SAL (Symbolic Analysis Laboratory) files",
+    "version": "0.1.0",
+    "publisher": "zutshi",
+    "engines": {
+      "vscode": "^1.50.0"
+    },
+    "author": {
+      "name": "Aditya Zutshi"
+    },
+    "license": "BSD-3-Clause",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/zutshi/sal-syntax-extension"
+    },
+    "categories": [
+      "Programming Languages",
+      "Other"
+    ],
+    
+    "contributes": {
+      "languages": [
+        {
+          "id": "sal",
+          "aliases": ["SAL", "sal"],
+          "extensions": [".sal"],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "sal",
+          "scopeName": "source.sal",
+          "path": "./sal.tmLanguage.json"
+        }
+      ]
+    }
+  }
+  
